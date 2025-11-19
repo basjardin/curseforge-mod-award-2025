@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurseForge Explorer - Mod of the Year 2025</title>
+    <meta name="description" content="Explore the best Minecraft mods competing for Mod of the Year 2025">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="container">
+            <div class="moty-badge">MOD OF THE YEAR 2025</div>
+            <h1><span class="brand-name">CurseForge</span> <span class="highlight">Explorer</span></h1>
+            <p class="subtitle">Discover Minecraft mods who can participate for <strong>Mod of the Year 2025</strong>
+            </p>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for award-worthy mods...">
+                <button id="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="results-container" class="grid-container">
+            <!-- Results will be injected here -->
+            <div class="empty-state">
+                <p>🔍 Start searching to find amazing mods who can participate for MOTY 2025!</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Mod details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
